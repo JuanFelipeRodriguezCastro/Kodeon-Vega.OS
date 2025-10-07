@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Personal</title>
+  <link rel="stylesheet" href="/assets/css/stylelogin.css">
+</head>
+<body>
+
+  <!-- Barra de navegación -->
+  <header class="navbar">
+    <nav>
+      <ul>
+        <li><a href="/Index.html">Inicio</a></li>
+        <li><a href="#">Servicios</a></li>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="Reserva.html">Reservar</a></li>
+        <li><a href="LoginCliente.html"></a>Iniciar sesión</a></li>
+      </ul>
+      </ul>
+    </nav>
+    <a href="LoginCliente.html" class="btn-cliente">Cliente</a>
+  </header>
+
+  <!-- Contenedor de Login -->
+  <main>
+    <section class="login-box">
+      <form id="login-form">
+        <label for="idUsuario">Usuario</label>
+        <input type="text" id="idUsuario" placeholder="Ingrese su usuario" required>
+
+        <label for="contraseña">Contraseña</label>
+        <input type="password" id="contraseña" placeholder="Ingrese su contraseña" required>
+
+        <button type="submit" class="btn-login">Sign In</button>
+        <a href="#" class="forgot">¿Olvidó su contraseña?</a>
+      </form>
+
+      <div id="mensaje"></div>
+
+      <button id="btn-perfil" style="display:none;" class="btn-perfil">Ver Perfil</button>
+
+      <div id="perfil" style="display:none;" class="perfil">
+        <h3>Mi Perfil</h3>
+        <p><strong>ID:</strong> <span id="perfil-id"></span></p>
+        <p><strong>Nombre:</strong> <span id="perfil-nombre"></span></p>
+        <p><strong>Rol:</strong> <span id="perfil-rol"></span></p>
+        <button id="logout" class="btn-logout">Cerrar Sesión</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-item">
+      <h4>See it all</h4>
+      <p>From local hotels to global brands, discover millions of rooms all around the world.</p>
+    </div>
+    <div class="footer-item">
+      <h4>Compare right here</h4>
+      <p>No need to search anywhere else. The biggest names in travel are right here.</p>
+    </div>
+    <div class="footer-item">
+      <h4>Get exclusive rates</h4>
+      <p>We've special deals with the world's leading hotels and we share these savings with you.</p>
+    </div>
+  </footer>
+
+  <script type="module" src="/assets/js/pruebas.js"></script>
+</body>
+</html>
